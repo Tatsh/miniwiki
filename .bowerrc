@@ -1,0 +1,5 @@
+{
+    "directory": "public/bower_components",
+    "analytics": false,
+    "strict-ssl": true
+}

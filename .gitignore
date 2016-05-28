@@ -1,3 +1,8 @@
-/vendor/
-/logs/*
-!/logs/README.md
+vendor/
+public/bower_components/
+public/static/*/*.js
+public/static/*/*.map
+public/static/*.map
+public/static/*.js
+logs/
+composer.lock

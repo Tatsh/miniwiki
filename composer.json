@@ -11,10 +11,16 @@
             "homepage": "http://www.joshlockhart.com/"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Miniwiki\\": "src/Miniwiki"
+        }
+    },
     "require": {
         "php": ">=5.5.0",
         "slim/slim": "^3.1",
         "slim/php-view": "^2.0",
-        "monolog/monolog": "^1.17"
+        "monolog/monolog": "^1.17",
+        "ezyang/htmlpurifier": "^4.7"
     }
 }

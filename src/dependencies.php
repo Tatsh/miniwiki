@@ -17,3 +17,9 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], Monolog\Logger::DEBUG));
     return $logger;
 };
+
+$container['html_purifier'] = function ($c) {
+    $config = \HTMLPurifier_Config::createDefault();
+    $config->set('AutoFormat.AutoParagraph', true);
+    return new \HTMLPurifier($config);
+};

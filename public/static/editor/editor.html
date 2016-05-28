@@ -1,0 +1,36 @@
+<div class="row">
+    <form class="col s12" ng-controller="editorController">
+        <div class="card-panel error-message-container hide">
+            <span class="red-text text-darken-2">{{ validationErrorMessage }}</span>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s8">
+                <input id="article-title" type="text" class="validate" ng-model="article.title" required ng-required ng-change="toggleDisableButtons(article)">
+                <label for="article-title">Title</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s10">
+                <textarea id="article-content" class="materialize-textarea" ng-model="article.content" required ng-required ng-change="toggleDisableButtons(article)"></textarea>
+                <label for="article-content">Content</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s8">
+                <i class="material-icons prefix">comment</i>
+                <input id="log-message" type="text" class="validate" ng-model="article.logMessage" required ng-required ng-change="toggleDisableButtons(article)">
+                <label for="log-message">Log message</label>
+            </div>
+        </div>
+        <div class="row">
+            <a class="waves-effect waves-light btn" href="#!"><i class="material-icons left">clear</i>Cancel</a>
+
+            <template-comment><button class="waves-effect waves-light btn preview disabled">Preview</button>
+            <button class="waves-effect waves-light btn view-changes disabled"><i class="material-icons left">track_changes</i>View changes</button></template-comment>
+
+            <button class="waves-effect waves-light btn save disabled" ng-click="save(article)"><i class="material-icons left">publish</i>Save</button>
+        </div>
+    </form>
+</div>

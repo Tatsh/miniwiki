@@ -6,3 +6,4 @@ public/static/*.map
 public/static/*.js
 logs/
 composer.lock
+node_modules/

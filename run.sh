@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-npm install coffee-script
+npm install
 cd public
 coffee -mbc static/
 cd ..

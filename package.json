@@ -1,0 +1,10 @@
+{
+  "name": "miniwikipedia",
+  "version": "0.0.1",
+  "description": "No description",
+  "author": "audvare@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "^1.12.2"
+  }
+}

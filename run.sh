@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
+set -o errexit
+
 npm install
+bower install
 cd public
 coffee -mbc static/
 cd ..

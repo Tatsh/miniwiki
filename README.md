@@ -1,8 +1,7 @@
 # How to run
 
-1. `npm install coffee-script` (make sure a `coffee` executable file is in `PATH`)
-2. `./run.sh`
-3. Visit http://127.0.0.1:8080/ in a web browser
+1. `./run.sh`
+2. Visit http://127.0.0.1:8080/ in a web browser
 
 # API
 
